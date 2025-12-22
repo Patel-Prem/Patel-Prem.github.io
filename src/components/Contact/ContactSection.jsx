@@ -130,7 +130,7 @@ export default function ContactSection() {
 
       setSubmitted(true);
       setEmailjsError(false);
-      console.log("Email Send ");
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
       setEmailjsError(true);
       setFormData({ name: "", email: "", subject: "", message: "" });
