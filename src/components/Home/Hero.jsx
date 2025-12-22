@@ -51,9 +51,9 @@ const Hero = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <span className="text-foreground">
-              Hi
+              Hi{" "}
               <span
-                className="inline-block text-7xl"
+                className="inline-block text-5xl md:text-7xl "
                 style={{
                   transformOrigin: "70% 70%",
                   animation: "wave 2.5s infinite",
@@ -61,7 +61,7 @@ const Hero = () => {
               >
                 👋
               </span>
-              , I'm
+              , I'm{" "}
             </span>
             <span className="text-primary">Prem Patel</span>
           </motion.h1>
