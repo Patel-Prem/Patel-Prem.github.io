@@ -3,8 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://Patel-Prem.github.io/",
   "scripts": {
-    "homepage": "https://Patel-Prem.github.io/",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
