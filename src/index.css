@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 0 0% 9%;
+  --destructive: 0 84% 32%;
+
+  --border: 0 0% 91%;
+
+  --card: 0 0% 98%;
+  --card-border: 0 0% 95%;
+
+  --primary: 142 76% 28%;
+  --primary-foreground: 142 76% 96%;
+  --primary-border: 142 76% 18%;
+
+  --muted: 142 6% 90%;
+  --muted-foreground: 142 6% 35%;
+
+  --button-outline: hsl(0deg 0% 0% / 12%);
+
+  --elevate-1: rgba(0, 0, 0, .03);
+  --elevate-2: rgba(0, 0, 0, .08);
+}
+
+.dark {
+  --background: 0 0% 7%;
+  --foreground: 0 0% 98%;
+  --destructive: 0 84% 32%;
+
+  --border: 0 0% 15%;
+
+  --card: 0 0% 9%;
+  --card-border: 0 0% 11%;
+
+  --primary: 142 76% 26%;
+  --primary-foreground: 142 76% 96%;
+  --primary-border: 142 76% 37%;
+
+  --muted: 142 6% 16%;
+  --muted-foreground: 142 6% 70%;
+
+  --button-outline: hsl(0deg 0% 100% / 10.2%);
+
+  --elevate-1: rgba(255, 255, 255, .04);
+  --elevate-2: rgba(255, 255, 255, .09);
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: sans-serif;
+  }
+}
+
+@layer utilities {
+
+  .hover-elevate,
+  .active-elevate-2 {
+    position: relative;
+    z-index: 0;
+    /* allow overlay above content */
+  }
+
+  .hover-elevate::after,
+  .active-elevate-2::after {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    /* match rounded corners */
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 150ms ease;
+  }
+
+  .hover-elevate:hover::after {
+    background-color: var(--elevate-1);
+    opacity: 1;
+  }
+
+  .active-elevate-2:active::after {
+    background-color: var(--elevate-2);
+    opacity: 1;
+  }
+
+  /* If the element has a border, extend overlay to cover it */
+  .border.hover-elevate::after,
+  .border.active-elevate-2::after {
+    inset: -1px;
+  }
+}
+
+
+@keyframes wave {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  10% {
+    transform: rotate(14deg);
+  }
+
+  20% {
+    transform: rotate(-8deg);
+  }
+
+  30% {
+    transform: rotate(14deg);
+  }
+
+  40% {
+    transform: rotate(-4deg);
+  }
+
+  50% {
+    transform: rotate(10deg);
+  }
+
+  60% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) scale(10)
+  }
+
+  100% {
+    transform: rotate(-360deg) scale(10)
+  }
+}
