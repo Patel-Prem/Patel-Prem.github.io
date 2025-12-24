@@ -77,7 +77,7 @@ const Navbar = () => {
     if (!element) return;
 
     // const navbarHeight = document.getElementById("navbar")?.offsetHeight || 80;
-    const navbarHeight =  50;
+    const navbarHeight = 50;
 
     const y =
       element.getBoundingClientRect().top +
@@ -190,7 +190,9 @@ const Navbar = () => {
               exit={{ opacity: 0, height: 0 }}
               className="md:hidden bg-background border-t border-border"
             >
-              <div className="px-4 py-4 space-y-3">
+              <div
+                className="px-4 py-4 space-y-3  max-h-[calc(100vh-4rem)] md:max-h-[calc(100vh-5rem)] overflow-y-auto"
+              >
                 {navItems.map((item) => {
                   const sectionId = item.href.replace("#", "");
 
