@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import ParticleBackground from "./ParticleBackground";
-import Button from "../common/Button";
+import Button from "../Common/Button";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -53,7 +53,7 @@ const Hero = () => {
             <span className="text-foreground">
               Hi{" "}
               <span
-                className="inline-block text-5xl md:text-7xl "
+                className="inline-block text-5xl lg:text-7xl"
                 style={{
                   transformOrigin: "70% 70%",
                   animation: "wave 2.5s infinite",

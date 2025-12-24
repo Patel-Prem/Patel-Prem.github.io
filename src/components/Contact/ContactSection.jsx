@@ -258,7 +258,7 @@ export default function ContactSection() {
             className="flex flex-col justify-center"
           >
             <div className="space-y-8">
-              <div>
+              <div className="text-center">
                 <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
                 <p className="text-muted-foreground leading-relaxed">
                   I’m open to opportunities, collaborations, or just a friendly
@@ -266,9 +266,9 @@ export default function ContactSection() {
                 </p>
               </div>
 
-              <div>
+              <div className="text-center">
                 <h4 className="font-semibold mb-4">Connect with me</h4>
-                <div className="flex items-center gap-3">
+                <div className="flex items-center justify-center gap-3">
                   {SOCIALLINKS.map((link) => (
                     <Button
                       key={link.label}
@@ -283,22 +283,26 @@ export default function ContactSection() {
                 </div>
               </div>
 
-              <div className="p-6 bg-primary/5 rounded-xl border border-primary/10">
-                <h4 className="font-semibold mb-2 flex items-center gap-2">
-                  <FiMail className="h-5 w-5 text-primary" />
-                  Email me directly
-                </h4>
-                <Link
-                  to="mailto:work.prempatel@gmail.com"
-                  className="text-primary hover:underline"
-                >
-                  work.prempatel@gmail.com
-                </Link>
+              <div className="text-center">
+                <div className="p-6 bg-primary/5 rounded-xl border border-primary/10">
+                  <h4 className="font-semibold mb-2 flex items-center justify-center gap-2">
+                    <FiMail className="h-5 w-5 text-primary" />
+                    Email me directly
+                  </h4>
+                  <Link
+                    to="mailto:work.prempatel@gmail.com"
+                    className="text-primary hover:underline"
+                  >
+                    work.prempatel@gmail.com
+                  </Link>
+                </div>
               </div>
 
-              <div className="text-sm text-muted-foreground">
-                <p>Based in Canada</p>
-                <p>Available for remote work</p>
+              <div className="text-center">
+                <div className="text-sm text-muted-foreground">
+                  <p>Based in Canada</p>
+                  <p>Available for remote work</p>
+                </div>
               </div>
             </div>
           </motion.div>

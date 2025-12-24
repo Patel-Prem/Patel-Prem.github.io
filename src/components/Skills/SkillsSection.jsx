@@ -43,7 +43,7 @@ export default function SkillsSection() {
                 </div>
                 <div className="flex flex-wrap gap-2">
                   {category.skills.map((skill) => (
-                    <Badge key={skill} variant="secondary" className="text-xs">
+                    <Badge key={skill} variant="default" className="text-xs">
                       {skill}
                     </Badge>
                   ))}
