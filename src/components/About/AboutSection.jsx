@@ -5,8 +5,8 @@ import { FiDownload } from "react-icons/fi";
 export default function AboutSection() {
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/resume.pdf";
-    link.download = "Prem-Patel-Resume.pdf";
+    link.href = "/Prem_Patel_Resume.pdf";
+    link.download = "Prem_Patel_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

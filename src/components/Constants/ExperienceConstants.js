@@ -1,24 +1,24 @@
 export const EXPERIENCES = [
     {
         id: 1,
-        company: "Yiion Systems",
-        role: "Software Developer",
-        period: "May / 2022 - Nov / 2022",
-        location: "Mehsana, Ind",
+        company: "Groveza Digital Private Limited",
+        role: "Intern - Software Developer",
+        period: "Sep / 2021 - Feb / 2022",
+        location: "Ahmedabad, Ind",
         description:
-            "Contributed to the development and maintenance of web applications, working closely with senior developers to implement features and improve system stability.",
+            "Created responsive web applications and interactive user interfaces for various clients across different industries.",
         achievements: [
-            "Assisted in building and updating application features and UI components",
-            "Helped optimize API calls to improve performance and reliability",
-            "Wrote unit tests and participated in code reviews to maintain code quality",
+            "Contributed to multiple client web projects using modern UI practices",
+            "Completed sprint tasks on time and collaborated with cross-functional teams",
         ],
-        technologies: ["React", "Node.js", "MySQL", "GitHub"]
+        technologies: ["Python", "JavaScript", "Node.js"],
     },
+
     {
         id: 2,
         company: "Groveza Digital Private Limited",
         role: "Software Developer",
-        period: "Nov / 2021 - Apr / 2022",
+        period: "Mar / 2022 - Sept / 2022",
         location: "Ahmedabad, Ind",
         description:
             "Built and maintained multiple client-facing applications. Collaborated with design and product teams to deliver user-centric solutions.",
@@ -29,18 +29,36 @@ export const EXPERIENCES = [
         ],
         technologies: ["Python", "C++", "VMWare"],
     },
+
+    // {
+    //     id: 3,
+    //     company: "Yiion Systems",
+    //     role: "Software Developer",
+    //     period: "May / 2022 - Nov / 2022",
+    //     location: "Mehsana, Ind",
+    //     description:
+    //         "Contributed to the development and maintenance of web applications, working closely with senior developers to implement features and improve system stability.",
+    //     achievements: [
+    //         "Assisted in building and updating application features and UI components",
+    //         "Helped optimize API calls to improve performance and reliability",
+    //         "Wrote unit tests and participated in code reviews to maintain code quality",
+    //     ],
+    //     technologies: ["React", "Node.js", "MySQL", "GitHub"]
+    // },
+
     {
         id: 3,
-        company: "Groveza Digital Private Limited",
-        role: "Intern - Software Developer",
-        period: "Sep / 2021 - Oct / 2020",
-        location: "Ahmedabad, Ind",
+        company: "BVD Group",
+        role: "Full Stack  Developer",
+        period: "Aug / 2024 - Present",
+        location: "Brampton, Can",
         description:
-            "Created responsive web applications and interactive user interfaces for various clients across different industries.",
+            "Contributed to the development and maintenance of web applications, working closely with senior developers to implement features and improve system stability.",
         achievements: [
-            "Contributed to multiple client web projects using modern UI practices",
-            "Completed sprint tasks on time and collaborated with cross-functional teams",
+            "Assisted in building and updating application features and UI components",
+            "Helped optimize API calls to improve performance and reliability",
+            "Wrote unit tests and participated in code reviews to maintain code quality",
         ],
-        technologies: ["Python", "JavaScript", "Node.js"],
+        technologies: ["React", "Node.js", "MySQL", "GitHub"]
     },
 ];

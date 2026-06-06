@@ -29,7 +29,7 @@ export default function ExperienceSection() {
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-px" />
 
           <div className="space-y-12">
-            {EXPERIENCES.map((exp, index) => (
+            {EXPERIENCES.toReversed().map((exp, index) => (
               <motion.div
                 key={exp.id}
                 initial={{ opacity: 0, y: 20 }}
