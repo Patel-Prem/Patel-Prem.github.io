@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import Badge from "../common/Badge";
-import Button from "../common/Button";
-import Card from "../common/Card";
+import Badge from "../Common/Badge";
+import Button from "../Common/Button";
+import Card from "../Common/Card";
 import { FiExternalLink, FiGithub, FiFolder } from "react-icons/fi";
-import { PROJECTS } from "../constants/ProjectConstants";
+import { PROJECTS } from "../Constants/ProjectConstants";
 
 export default function ProjectsSection() {
 

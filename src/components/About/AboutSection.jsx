@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Button from "../common/Button";
+import Button from "../Common/Button";
 import { FiDownload } from "react-icons/fi";
 
 export default function AboutSection() {

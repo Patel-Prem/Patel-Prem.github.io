@@ -6,8 +6,8 @@ import {
   CardDescription,
   CardList,
   CardBadges,
-} from "../components/common/Card";
-import Badge, { BadgeGroup } from "../components/common/Badge";
+} from "../components/Common/Card";
+import Badge, { BadgeGroup } from "../components/Common/Badge";
 
 export default function ComponentPreview() {
   return (

@@ -1,9 +1,9 @@
 
 import { motion } from "framer-motion";
-import { Badge } from "../common/Badge";
-import { Card } from "../common/Card";
+import { Badge } from "../Common/Badge";
+import { Card } from "../Common/Card";
 import { LuBuilding2, LuCalendar } from "react-icons/lu";
-import { EXPERIENCES } from "../constants/ExperienceConstants"
+import { EXPERIENCES } from "../Constants/ExperienceConstants"
 
 export default function ExperienceSection() {
   return (

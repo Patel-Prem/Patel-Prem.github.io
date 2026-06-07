@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
-import Badge from "../common/Badge";
-import Card from "../common/Card";
+import Badge from "../Common/Badge";
+import Card from "../Common/Card";
 import { LuGraduationCap, LuAward, LuCalendar } from "react-icons/lu";
-import { EDUCTION, CERTIFICATIONS } from "../constants/EductionConstants";
+import { EDUCTION, CERTIFICATIONS } from "../Constants/EductionConstants";
 
 export default function EducationSection() {
   return (

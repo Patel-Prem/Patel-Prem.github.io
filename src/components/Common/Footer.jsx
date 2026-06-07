@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
-import Button from "../common/Button";
+import Button from "../Common/Button";
 import { FiArrowUp } from "react-icons/fi";
-import { SOCIALLINKS } from "../constants/SocialLinks";
+import { SOCIALLINKS } from "../Constants/SocialLinks";
 
 export default function Footer() {
   const scrollToTop = () => {
