@@ -5,8 +5,8 @@ import Experience from "../components/Experience/ExperienceSection";
 import Projects from "../components/Projects/ProjectsSection";
 import EducationCard from "../components/Education/EducationCard";
 import ContactForm from "../components/Contact/ContactSection";
-import Navbar from "../components/common/Navbar";
-import Footer from "../components/common/Footer";
+import Navbar from "../components/Common/Navbar";
+import Footer from "../components/Common/Footer";
 
 const HomePage = () => {
   return (
